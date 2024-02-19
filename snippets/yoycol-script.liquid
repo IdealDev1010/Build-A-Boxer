@@ -1,0 +1,1 @@
+{% if template contains 'product' %} <script> window.yoycolShop = {product: {{ product | json }},customized:Boolean({{ product.metafields.yoycol.customized.value}}),selector: '',}</script>{% endif %}
