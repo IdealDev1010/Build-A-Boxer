@@ -11,7 +11,6 @@
   .newsletter-form {
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 36rem;
   }
 }
 
@@ -25,8 +24,19 @@
 
 .newsletter-form__field-wrapper .field {
   z-index: 0;
+  margin-bottom: 20px;
 }
 
+.newsletter-form__field-wrapper .field__label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #0000004d;
+
+
+}
 .newsletter-form__message {
   justify-content: center;
   margin-bottom: 0;

@@ -1,0 +1,78 @@
+{{'product-slide.css' | asset_url |stylesheet_tag}}
+
+{%- style -%}
+
+.product-slide{
+    background-color: {{ section.settings.background_color }};
+}
+
+{%- endstyle -%}
+
+<div class="product-slide__content swiper page-width" id="swiper1">
+    <div class="product-slide__wrapper swiper-wrapper">
+        {% for product in section.settings.collection.products %}
+            {% liquid 
+                assign compare_at_price = product.compare_at_price
+                assign price = product.price | default: 1999
+                assign price_min = product.price_min
+              assign price_max = product.price_max
+              assign available = target.available | default: false
+              assign money_price = price | money
+              assign money_price_min = price_min | money
+              assign money_price_max = price_max | money
+            %}
+            <div class="product-item swiper-slide">
+            
+            <div class="product__image swiper-slide"> <a href="{{product.url}}"><img src="{{ product.featured_image | img_url: '500x600' }}"/></a></div>
+             
+            <div class="product-information">
+                <div class="product__title">{{ product.title }}</div>
+                <div class="product__vender__price">
+                    <div class="product__vender">{{ product.vendor }}</div>
+                    {% render 'price' product: product %}
+                </div>
+            </div>
+            </div>
+        {% endfor %}
+    </div>
+   <div class="swiper-btn">
+    <div class="swiper-btn-prev">
+        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.69479 20.1269L-0.00235185 10.6126L9.51597 0.911409L11.6872 3.01244L5.81399 8.99844L21.4326 8.84795L21.4603 11.9584L5.84174 12.1089L11.8278 17.9529L9.69479 20.1269Z" fill="black"/>
+        </svg>
+            
+    </div>
+    <div class="swiper-btn-next">
+        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.5958 0.0293628L22.1361 9.70103L12.4604 19.2453L10.3238 17.109L16.2941 11.2198L0.675165 11.1149L0.698287 8.00438L16.3172 8.10934L10.4275 2.16821L12.5958 0.0293628Z" fill="black"/>
+        </svg>
+    </div>
+  </div>
+</div>
+<script src="{{ 'product-slide.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{
+    "name": "product slide",
+    "class": "product-slide",
+    "settings": [
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "Select collection"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background color"
+        }
+      ],
+      "presets": [
+        {
+          "name": "product slide"
+        }
+      ]
+            
+      
+}
+{% endschema %}
+

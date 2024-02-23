@@ -230,7 +230,7 @@
               </div>
             {%- endif -%}
             <ul class="list list-social list-unstyled" role="list">
-              {%- if settings.social_twitter_link != blank -%}
+              {% comment %} {%- if settings.social_twitter_link != blank -%}
                 <li class="list-social__item">
                   <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
                     {%- render 'icon-twitter' -%}
@@ -301,7 +301,54 @@
                     <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
                   </a>
                 </li>
+              {%- endif -%} {% endcomment %}
+
+              {%- if settings.social_instagram_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_instagram_link }}" class="link list-social__link">
+                      <span class="social_title">INSTAGRAM</span>
+                      <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                      {% render 'icon-social-arrow' %}
+                  </a>
+                </li>
               {%- endif -%}
+            {%- if settings.social_facebook_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
+                    <span class="social_title">FACEBOOK</span>
+                     <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                     {% render 'icon-social-arrow' %}
+                </a>
+              </li>
+            {%- endif -%}
+            
+            {%- if settings.social_tiktok_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_tiktok_link }}" class="link list-social__link">
+                    <span class="social_title">TIKTOK</span>
+                    <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                    {% render 'icon-social-arrow' %}
+                </a>
+              </li>
+            {%- endif -%}
+              {%- if settings.social_phone_number != blank -%}
+                <li class="list-social__item">
+                  <a href="tel:+14175275197" class="link list-social__link">
+                      <span class="social_title">PHONE</span>
+                    {% render 'icon-social-arrow' %}
+                  </a>
+                </li>
+              {%- endif -%}
+        
+              {%- if settings.social_email_link != blank -%}
+                <li class="list-social__item">
+                  <a href = "mailto:abc@example.com" class="link list-social__link">
+                      <span class="social_title">EMAIL</span>
+                      {% render 'icon-social-arrow' %}
+                  </a>
+                </li>
+              {%- endif -%}
+        
             </ul>
           </div>
         </div>

@@ -386,11 +386,86 @@
 
 .banner__box > * + .banner__text {
   margin-top: 1.5rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+ 
+}
+
+.banner__heading {
+  margin-bottom: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 84%;
+  /* or 77px */
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.banner__content-icon {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.banner__content-scrollbar {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 999;
+  cursor: pointer;
+}  
+
+@media (min-width:950px) {
+  .banner__content-scrollbar {
+    bottom: 295px;
+    right: 65px;
+  }  
+
+  .banner__content-scrollbar.active{
+    bottom: 70px;
+  }
+  
+  .banner__content-icon {
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+  }
+}
+
+
+.banner__content-scrollbar span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+}
+.content-scrollbar__icon {
+  height: 22px;
 }
 
 @media screen and (min-width: 750px) {
   .banner__box > * + .banner__text {
-    margin-top: 2rem;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    max-width: 560px;
+    margin: 0px;
+    margin-top: 32px;
+  }
+
+  .banner__heading {
+    font-size: 90px;
   }
 }
 
@@ -420,10 +495,6 @@
   .banner__box {
     max-width: 90rem;
   }
-}
-
-.banner__heading {
-  margin-bottom: 0;
 }
 
 .banner__box .banner__heading + * {
@@ -477,5 +548,11 @@
   .banner--desktop-transparent .inline-richtext a:hover,
   .banner--desktop-transparent .rte a:hover {
     color: currentColor;
+  }
+}
+
+@media (max-width:768px) {
+  .banner__content-scrollbar {
+    display: no;
   }
 }

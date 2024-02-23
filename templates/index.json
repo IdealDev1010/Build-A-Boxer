@@ -6,12 +6,13 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Building the future of comfort",
+            "heading_size": "h1"
           }
         },
         "button": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
@@ -20,18 +21,27 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "text_Qxxce9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to the Future of Comfort! Where Innovation Meets Individuality!<\/p>",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "heading",
-        "button"
+        "button",
+        "text_Qxxce9"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/HERO_1.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "bottom-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "inverse",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -39,37 +49,108 @@
         "show_text_below": false
       }
     },
+    "rich_text_wz8HxY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tVwUyx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Redefining comfort with customized boxers. Design your own comfort!",
+            "heading_size": "h1"
+          }
+        },
+        "text_RhN3Um": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Make your boxers an extension of your personality. Building your dream boxers using images, colors, patterns, and designs!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tVwUyx",
+        "text_RhN3Um"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "background_color": "#80d2e7",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
-        "title": "Featured products",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "collection": "boxer",
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
+        "show_secondary_image": false,
+        "show_vendor": true,
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "product_slide_YwTGTN": {
+      "type": "product-slide",
+      "settings": {
+        "collection": "boxer",
+        "background_color": "#80d2e7"
+      }
+    },
+    "image_banner_mwyPW3": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_JmgNjG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join our boxer revolution: comfort, creativity, and customization await!",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JmgNjG"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Link_-_The_Warley_Fall_Two_Gallon.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "rich_text_wz8HxY",
+    "featured_collection",
+    "product_slide_YwTGTN",
+    "image_banner_mwyPW3"
   ]
 }
