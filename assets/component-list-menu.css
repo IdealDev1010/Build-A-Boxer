@@ -14,12 +14,12 @@
 }
 
 .list-menu__item--active {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  /* text-decoration: underline; */
+  /* text-underline-offset: 0.3rem; */
 }
 
 .list-menu__item--active:hover {
-  text-decoration-thickness: 0.2rem;
+  /* text-decoration-thickness: 0.2rem; */
 }
 
 .list-menu--disclosure.localization-selector {
@@ -27,4 +27,18 @@
   overflow: auto;
   width: 10rem;
   padding: 0.5rem;
+}
+
+.header__menu-item {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 47px;
+  color: #000000;
+}
+
+@media (max-width:1024px) {
+  .header__menu-item {
+    font-size: 27px;
+  }
 }

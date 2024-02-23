@@ -707,12 +707,6 @@ summary::-webkit-details-marker {
   box-shadow: none;
 }
 
-*:focus-visible {
-  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
-  outline-offset: 0.3rem;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
-}
-
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
 .focused,
 .no-js *:focus {
@@ -1172,6 +1166,9 @@ summary::-webkit-details-marker {
   opacity: 0;
 }
 
+img {
+  /* filter:blur(20px); */
+}
 @media screen and (min-width: 990px) {
   .media--cropped {
     padding-bottom: 63%;
@@ -1597,86 +1594,12 @@ details[open] > .share-button__fallback {
   border: 0;
 }
 
-.field:before,
-.select:before,
-.customer .field:before,
-.customer select:before,
-.localization-form__select:before {
-  pointer-events: none;
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--inputs-radius-outset);
-  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset)
-    var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
-  z-index: -1;
-}
-
-.field:after,
-.select:after,
-.customer .field:after,
-.customer select:after,
-.localization-form__select:after {
-  pointer-events: none;
-  content: '';
-  position: absolute;
-  top: var(--inputs-border-width);
-  right: var(--inputs-border-width);
-  bottom: var(--inputs-border-width);
-  left: var(--inputs-border-width);
-  border: 0.1rem solid transparent;
-  border-radius: var(--inputs-radius);
-  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
-  transition: box-shadow var(--duration-short) ease;
-  z-index: 1;
-}
-
 .select__select {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
   font-size: 1.2rem;
   color: rgba(var(--color-foreground), 0.75);
-}
-
-.field:hover.field:after,
-.select:hover.select:after,
-.select__select:hover.select__select:after,
-.customer .field:hover.field:after,
-.customer select:hover.select:after,
-.localization-form__select:hover.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
-    rgba(var(--color-foreground), var(--inputs-border-opacity));
-  outline: 0;
-  border-radius: var(--inputs-radius);
-}
-
-.field__input:focus-visible,
-.select__select:focus-visible,
-.customer .field input:focus-visible,
-.customer select:focus-visible,
-.localization-form__select:focus-visible.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
-  outline: 0;
-  border-radius: var(--inputs-radius);
-}
-
-.field__input:focus,
-.select__select:focus,
-.customer .field input:focus,
-.customer select:focus,
-.localization-form__select:focus.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
-  outline: 0;
-  border-radius: var(--inputs-radius);
-}
-
-.localization-form__select:focus {
-  outline: 0;
-  box-shadow: none;
 }
 
 .text-area,
@@ -1713,6 +1636,7 @@ details[open] > .share-button__fallback {
   width: 100%;
   display: flex;
   transition: box-shadow var(--duration-short) ease;
+  flex-direction: column-reverse;
 }
 
 .customer .field {
@@ -1727,55 +1651,27 @@ details[open] > .share-button__fallback {
 .customer .field input {
   flex-grow: 1;
   text-align: left;
-  padding: 1.5rem;
+  padding: 3.5rem;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .field__label,
 .customer .field label {
   font-size: 1.6rem;
-  left: calc(var(--inputs-border-width) + 2rem);
-  top: calc(1rem + var(--inputs-border-width));
-  margin-bottom: 0;
   pointer-events: none;
-  position: absolute;
   transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
 }
 
-.field__input:focus ~ .field__label,
-.field__input:not(:placeholder-shown) ~ .field__label,
-.field__input:-webkit-autofill ~ .field__label,
-.customer .field input:focus ~ label,
-.customer .field input:not(:placeholder-shown) ~ label,
-.customer .field input:-webkit-autofill ~ label {
-  font-size: 1rem;
-  top: calc(var(--inputs-border-width) + 0.5rem);
-  left: calc(var(--inputs-border-width) + 2rem);
-  letter-spacing: 0.04rem;
-}
-
-.field__input:focus,
-.field__input:not(:placeholder-shown),
-.field__input:-webkit-autofill,
-.customer .field input:focus,
-.customer .field input:not(:placeholder-shown),
-.customer .field input:-webkit-autofill {
-  padding: 2.2rem 1.5rem 0.8rem 2rem;
-  margin: var(--inputs-border-width);
-}
 
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
-}
-
-.field__input::placeholder,
-.customer .field input::placeholder {
-  opacity: 0;
 }
 
 .field__button {
@@ -2373,8 +2269,12 @@ product-info .loading__spinner:not(.hidden) ~ *,
   background-color: rgb(var(--color-background));
 }
 
+.section-header:not(.shopify-section-header-sticky) .header-wrapper {
+  background-color: transparent;
+}
+
 .header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  /* border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08); */
 }
 
 .header {
@@ -2480,6 +2380,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header__heading-logo {
   height: auto;
   max-width: 100%;
+  padding-bottom: 30px;
 }
 
 .header__heading-logo-wrapper {
@@ -2577,13 +2478,14 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header__icon,
 .header__icon--cart .icon {
   height: 4.4rem;
-  width: 4.4rem;
+  /* width: 4.4rem; */
   padding: 0;
 }
 
 .header__icon--cart {
   position: relative;
   margin-right: -1.2rem;
+  text-decoration: none;
 }
 
 .header__icon--menu[aria-expanded='true']::before {
@@ -2622,6 +2524,7 @@ menu-drawer + .header__search {
 .header__search {
   display: inline-flex;
   line-height: 0;
+  display: none;
 }
 
 .header--top-center > .header__search {
@@ -2635,7 +2538,8 @@ menu-drawer + .header__search {
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
   .header--top-center > .header__search {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: none;
   }
 
   .header:not(.header--top-center) > .header__search,
@@ -2774,7 +2678,7 @@ details[open] > .header__submenu {
 
 /* Header menu */
 .header__inline-menu {
-  margin-left: -1.2rem;
+  margin-left: 10rem;
   grid-area: navigation;
   display: none;
 }
@@ -2821,8 +2725,8 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  /* text-decoration: underline;
+  text-underline-offset: 0.3rem; */
 }
 
 details[open] > .header__menu-item {
@@ -2946,11 +2850,11 @@ details-disclosure > details {
   word-break: break-word;
 }
 
-.gradient {
+/* .gradient {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
   background-attachment: fixed;
-}
+} */
 
 @media screen and (forced-colors: active) {
   .icon {
@@ -3107,37 +3011,6 @@ details-disclosure > details {
 
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
-}
-
-/* outline and border styling for Windows High Contrast Mode */
-@media (forced-colors: active) {
-  .button,
-  .shopify-challenge__button,
-  .customer button {
-    border: transparent solid 1px;
-  }
-
-  .button:focus-visible,
-  .button:focus,
-  .button.focused,
-  .shopify-payment-button__button--unbranded:focus-visible,
-  .shopify-payment-button [role='button']:focus-visible,
-  .shopify-payment-button__button--unbranded:focus,
-  .shopify-payment-button [role='button']:focus {
-    outline: solid transparent 1px;
-  }
-
-  .field__input:focus,
-  .select__select:focus,
-  .customer .field input:focus,
-  .customer select:focus,
-  .localization-form__select:focus.localization-form__select:after {
-    outline: transparent solid 1px;
-  }
-
-  .localization-form__select:focus {
-    outline: transparent solid 1px;
-  }
 }
 
 .rte:after {
@@ -3509,5 +3382,49 @@ details-disclosure > details {
 
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
+  }
+}
+
+.header__icon--cart .cart-container {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 47px;
+  color: #000000;
+}
+
+body.template--index .content-for-layout {
+  margin-top: -230px;
+}
+
+@media (max-width:768px) {
+  body.template--index .content-for-layout {
+    margin-top: 0px;
+  }
+
+  .header__icon--cart .cart-container {
+    font-size: 25px;
+    line-height: 47px;
+    color: #000000;
+  }
+
+  .header__heading-logo {
+    height: auto;
+    max-width: 70%;
+    padding-bottom: 0px;
+  } 
+  
+}
+
+@media (min-width:1024px) {
+  .header--middle-left .header__inline-menu {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width:1024px) {
+  .header--middle-left .header__inline-menu {
+    margin-left: 0px;
   }
 }

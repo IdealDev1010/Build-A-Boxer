@@ -171,6 +171,7 @@
   align-self: flex-end;
   grid-row-start: 3;
   justify-self: flex-start;
+  display: none;
 }
 
 .card__badge.top {
@@ -200,6 +201,12 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+  opacity: 0.5;
 }
 
 .card__heading:last-child {
@@ -298,10 +305,10 @@
     transform: scale(1.03);
   }
 
-  .underline-links-hover:hover a {
+  /* .underline-links-hover:hover a {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
-  }
+  } */
 }
 
 .card--standard.card--media .card__inner .card__information,
@@ -482,4 +489,17 @@
   .grid__item:nth-child(8n) .product-card-wrapper:hover .shape--blob {
     clip-path: polygon(var(--shape--blob-5));
   }
+}
+
+.caption-with-letter-spacing {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.card-info__detail {
+  display: flex;
+  justify-content: space-between;
 }
