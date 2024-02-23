@@ -318,17 +318,23 @@
       {%- endfor -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {%- liquid
+        {% comment %} {%- liquid
           if cart == empty
-            render 'icon-cart-empty'
+            
+            
           else
             render 'icon-cart'
           endif
-        -%}
+        -%} {% endcomment %}
+        {%- if cart == empty -%}
+          <span class="cart-container">cart ({{ cart.item_count }})</span>
+        {%- endif -%}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
+              <span class="cart-container">cart ({{ cart.item_count }})</span>
               <span aria-hidden="true">{{ cart.item_count }}</span>
             {%- endif -%}
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
@@ -499,7 +505,7 @@
 {
   "name": "t:sections.header.name",
   "class": "section-header",
-  "max_blocks": 3,
+  "max_blocks": 5,
   "settings": [
     {
       "type": "select",
