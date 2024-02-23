@@ -17,7 +17,7 @@
 }
 
 .list-social__item {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
 }
 
 .list-social__link {
@@ -44,7 +44,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 100%;
 text-transform: uppercase;
-color: #000000;
+color: #fff;
 }
 
 .social-list-title {
@@ -53,7 +53,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 100%;
 text-transform: uppercase;
-color: #000000;
+color: #fff;
 }
 
 .social-list-container {
