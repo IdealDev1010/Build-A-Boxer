@@ -39,6 +39,7 @@
         "newsletter_heading": "join the community",
         "enable_follow_on_shop": true,
         "background_image": "shopify:\/\/shop_images\/pexels-mike-jones-8874710_1.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/1.jpg",
         "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
