@@ -329,15 +329,15 @@
         {%- if cart == empty -%}
           <span class="cart-container">cart ({{ cart.item_count }})</span>
         {%- endif -%}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        
 
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
+            <span class="cart-text">{{ 'templates.cart.cart' | t }}</span>
             {%- if cart.item_count < 100 -%}
-              <span class="cart-container">cart ({{ cart.item_count }})</span>
-              <span aria-hidden="true">{{ cart.item_count }}</span>
+              <span aria-hidden="false">({{ cart.item_count }})</span>
             {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+            {% comment %} <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span> {% endcomment %}
           </div>
         {%- endif -%}
       </a>

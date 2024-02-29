@@ -1999,7 +1999,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .cart-count-bubble {
   position: absolute;
-  background-color: rgb(var(--color-button));
+  /* background-color: rgb(var(--color-button)); */
   color: rgb(var(--color-button-text));
   height: 1.7rem;
   width: 1.7rem;
@@ -3396,10 +3396,10 @@ details-disclosure > details {
 }
 
 body.template--index .content-for-layout {
-  margin-top: -230px;
+  margin-top: -250px;
 }
 
-@media (max-width:768px) {
+@media (max-width:990px) {
   body.template--index .content-for-layout {
     margin-top: 0px;
   }
@@ -3418,13 +3418,13 @@ body.template--index .content-for-layout {
   
 }
 
-@media (min-width:1024px) {
+@media (min-width:1255px) {
   .header--middle-left .header__inline-menu {
     margin-left: 150px;
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1109px) {
   .header--middle-left .header__inline-menu {
     margin-left: 0px;
   }

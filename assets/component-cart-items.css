@@ -214,6 +214,19 @@ cart-remove-button .icon-remove {
   text-transform: uppercase;
 }
 
+.cart-count-bubble span{
+    width: 60px;
+    height: 51px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 47px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 @media screen and (max-width: 749px) {
   .cart-items,
   .cart-items thead,
