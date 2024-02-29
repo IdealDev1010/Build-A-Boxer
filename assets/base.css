@@ -3399,7 +3399,7 @@ body.template--index .content-for-layout {
   margin-top: -250px;
 }
 
-@media (max-width:990px) {
+@media (max-width:1120px) {
   body.template--index .content-for-layout {
     margin-top: 0px;
   }
@@ -3415,7 +3415,6 @@ body.template--index .content-for-layout {
     max-width: 70%;
     padding-bottom: 0px;
   } 
-  
 }
 
 @media (min-width:1255px) {
