@@ -137,14 +137,6 @@
     "content_for_index": [
 
     ],
-    "blocks": {
-      "14847459021641295842": {
-        "type": "shopify:\/\/apps\/custom-product-designer-studio\/blocks\/product_designer\/77c0b81f-7286-46a5-80e2-582b8f3a6f4d",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    },
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -152,7 +144,7 @@
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
-          "button_label": "#ffffff",
+          "button_label": "#fff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
