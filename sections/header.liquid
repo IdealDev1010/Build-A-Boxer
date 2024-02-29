@@ -332,7 +332,7 @@
         
 
         {%- if cart != empty -%}
-          <div class="cart-count-bubble">
+          <div class="cart-count-bubble cart-container">
             <span class="cart-text">{{ 'templates.cart.cart' | t }}</span>
             {%- if cart.item_count < 100 -%}
               <span aria-hidden="false">({{ cart.item_count }})</span>
