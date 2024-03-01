@@ -5,15 +5,15 @@
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
-        "color_scheme": "background-1"
+        "color_scheme": "scheme-7e5359f9-10d9-4950-ab8f-5c8ec3921f11"
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
+        "products_per_page": 8,
+        "columns_desktop": 2,
+        "color_scheme": "scheme-7e5359f9-10d9-4950-ab8f-5c8ec3921f11",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
