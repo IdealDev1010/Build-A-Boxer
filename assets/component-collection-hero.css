@@ -37,6 +37,18 @@
 
 .collection-hero__title {
   margin: 2.5rem 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 92px;
+  line-height: 84%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 4px solid;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 .collection-hero__title + .collection-hero__description {
