@@ -92,7 +92,13 @@
 @media screen and (max-width: 749px) {
   .collection-hero__image-container {
     height: 20rem;
+}
+
+@media (max-width: 768px) {
+  .collection-hero__title {
+    font-size: 40px;
   }
+}
 }
 
 @media screen and (min-width: 750px) {
