@@ -2272,7 +2272,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .section-header:not(.shopify-section-header-sticky) .header-wrapper {
-  background-color: transparent;
+  background-color: #80d2e7;
 }
 
 .header-wrapper--border-bottom {
@@ -2284,7 +2284,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
   grid-template-areas: 'left-icons heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  background: #80d2e7;
 }
 
 @media screen and (max-width: 749px) {
