@@ -207,6 +207,7 @@
   line-height: 47px;
   color: #000000;
   opacity: 0.5;
+  text-align: center;
 }
 
 .card__heading:last-child {
@@ -501,5 +502,12 @@
 
 .card-info__detail {
   display: flex;
+  justify-content: space-between;
+}
+
+.product-grid__item {
+  max-width: 450px !important;
+}
+.product-grid {
   justify-content: space-between;
 }
