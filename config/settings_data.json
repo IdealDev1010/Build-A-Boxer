@@ -2,9 +2,9 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/B57E7134-9258-4AE8-8C9C-EDA753240DA1_1_1.png",
     "logo_width": 230,
-    "type_header_font": "assistant_n7",
+    "type_header_font": "roboto_n7",
     "heading_scale": 135,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "roboto_n4",
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 0,
