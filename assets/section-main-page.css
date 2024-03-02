@@ -4,11 +4,46 @@
 
 .main-page-title {
   margin-bottom: 3rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 84%;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  max-width: 740px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 23px;
+  border-bottom: 8px solid;
+  padding-bottom: 30px;
+}
+
+.page-content div{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #000000;
+}
+
+.page-content h2 {
+font-style: normal;
+font-weight: 800;
+font-size: 75px;
+line-height: 84%;
+text-align: center;
+letter-spacing: -0.04em;
+text-transform: uppercase;
+color: #000000;
 }
 
 @media screen and (min-width: 750px) {
   .main-page-title {
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
   }
 }
 

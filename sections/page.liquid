@@ -12,9 +12,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  #{{ section.id }} {
+    background-color: {{ section.settings. background_color }};
+  }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient" id="{{ section.id }}">
   <div class="page-width page-width--narrow section-{{ section.id }}-padding">
     <h2 class="page-title {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       {%- if section.settings.page.title != blank -%}
@@ -80,6 +84,11 @@
       "content": "t:sections.all.padding.section_padding_heading"
     },
     {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -99,6 +108,7 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     }
+    
   ],
   "presets": [
     {
