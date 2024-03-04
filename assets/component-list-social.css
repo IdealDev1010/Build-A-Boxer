@@ -64,6 +64,15 @@ color: #fff;
 
 }
 
+.footer-social-list {
+  max-width: 300px;
+  width: 100%;
+}
+
+.contactpage-social-title {
+  display: none;
+}
+
 @media (max-width:768px) {
    .social-list-container {
     max-width: unset;
