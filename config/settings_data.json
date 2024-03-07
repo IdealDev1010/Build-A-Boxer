@@ -140,7 +140,7 @@
     "blocks": {
       "14847459021641295842": {
         "type": "shopify:\/\/apps\/custom-product-designer-studio\/blocks\/product_designer\/77c0b81f-7286-46a5-80e2-582b8f3a6f4d",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
