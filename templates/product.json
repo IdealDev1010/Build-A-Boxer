@@ -38,6 +38,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "yoycol_print_on_demand_yoy_cust_jViak4": {
+          "type": "shopify:\/\/apps\/yoycol-print-on-demand\/blocks\/yoy_cust\/4bd0a00a-9e7e-4d5c-9852-a94e151633f7",
+          "settings": {
+            "product": ""
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -59,6 +65,7 @@
         "price",
         "quantity_selector",
         "buy_buttons",
+        "yoycol_print_on_demand_yoy_cust_jViak4",
         "description",
         "share"
       ],
@@ -98,16 +105,6 @@
     },
     "1709107582c176608d": {
       "type": "apps",
-      "blocks": {
-        "customily_product_personalizer_main_hdrCbH": {
-          "type": "shopify:\/\/apps\/customily-product-personalizer\/blocks\/main\/38e5281a-51b4-4383-badc-af97d3fb7e7b",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "customily_product_personalizer_main_hdrCbH"
-      ],
       "settings": {
         "include_margins": true
       }
