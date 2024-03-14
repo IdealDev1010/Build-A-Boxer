@@ -26,12 +26,6 @@
           "settings": {
           }
         },
-        "yoycol_print_on_demand_yoy_cust_ka4PpG": {
-          "type": "shopify:\/\/apps\/yoycol-print-on-demand\/blocks\/yoy_cust\/4bd0a00a-9e7e-4d5c-9852-a94e151633f7",
-          "settings": {
-            "product": "build-a-boxer"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -63,7 +57,6 @@
         "title",
         "variant_picker",
         "price",
-        "yoycol_print_on_demand_yoy_cust_ka4PpG",
         "quantity_selector",
         "buy_buttons",
         "description",
