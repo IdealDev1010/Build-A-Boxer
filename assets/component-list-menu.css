@@ -31,13 +31,14 @@
 
 .header__menu-item {
   font-style: normal;
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 47px;
+  font-family: "Montserrat-Bold";
+  font-weight: 1000;
+  font-size: 35px;
+  line-height: 50px;
   color: #000000;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1110px) {
   .header__menu-item {
     font-size: 27px;
   }

@@ -72,6 +72,10 @@
 }
 
 /* base */
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("https://cdn.shopify.com/s/files/1/0848/8507/8332/files/Montserrat-Bold.ttf?v=1710817946") format("ttf"),
+}
 
 .no-js:not(html) {
   display: none !important;
