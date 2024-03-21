@@ -33,7 +33,7 @@
         "logo_position": "middle-left",
         "menu": "header-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "none",
         "show_line_separator": false,
         "color_scheme": "scheme-7e5359f9-10d9-4950-ab8f-5c8ec3921f11",
         "menu_color_scheme": "background-1",
