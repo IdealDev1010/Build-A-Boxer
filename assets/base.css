@@ -2275,9 +2275,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
   background-color: rgb(var(--color-background));
 }
 
-.template--index .header-wrapper {
+/* .template--index .header-wrapper {
   background-color: transparent;
-}
+} */
 
 .template--index .section-header:not(.shopify-section-header-sticky) .header-wrapper {
   background-color: transparent; 
@@ -2698,7 +2698,7 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1006px) {
   .header__inline-menu {
     display: block;
   }
@@ -3438,13 +3438,13 @@ header.header--index {
   } 
 }
 
-@media (min-width:1255px) {
+@media (min-width:1300px) {
   .header--middle-left .header__inline-menu {
     margin-left: 150px;
   }
 }
 
-@media (max-width:1109px) {
+@media (max-width:990px) {
   .header--middle-left .header__inline-menu {
     margin-left: 0px;
   }
