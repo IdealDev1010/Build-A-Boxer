@@ -38,7 +38,7 @@
   color: #000000;
 }
 
-@media (max-width:1110px) {
+@media (max-width:1150px) {
   .header__menu-item {
     font-size: 27px;
   }
