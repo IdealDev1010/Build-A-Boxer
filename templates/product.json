@@ -96,16 +96,6 @@
     },
     "1709107582c176608d": {
       "type": "apps",
-      "blocks": {
-        "customily_product_personalizer_main_hdrCbH": {
-          "type": "shopify:\/\/apps\/customily-product-personalizer\/blocks\/main\/38e5281a-51b4-4383-badc-af97d3fb7e7b",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "customily_product_personalizer_main_hdrCbH"
-      ],
       "settings": {
         "include_margins": true
       }
