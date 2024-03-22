@@ -45,6 +45,11 @@
   
 }
 
+.collection__product-item2 {
+  margin-left: 30px;
+  width: calc(25% - 30px);
+}
+
 .collection-list__item:only-child {
   max-width: 100%;
   width: 100%;
@@ -61,6 +66,9 @@
   .collection__product-grid2, .collection__product-item2 {
     width: 100%;
     margin: 0;
+  }
+  .collection__product-grid2 {
+    flex-wrap: wrap;
   }
 
   .collection__product-grid2 {
@@ -101,10 +109,6 @@
   margin-top: 2rem;
 }
 
-.collection__product-item2 {
-  margin-left: 30px;
-  width: calc(25% - 30px);
-}
 
 .show-more {
   position: absolute;
