@@ -2,7 +2,6 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/B57E7134-9258-4AE8-8C9C-EDA753240DA1_1_1.png",
     "logo_width": 230,
-    "favicon": "shopify:\/\/shop_images\/2096FBB7-B9AF-42B1-8DDE-9018D08CA3D6.heic",
     "type_header_font": "roboto_n7",
     "heading_scale": 135,
     "type_body_font": "roboto_n4",
@@ -101,16 +100,16 @@
     "brand_headline": "",
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/buildaboxers.official\/",
-    "social_instagram_link": "https:\/\/instagram.com\/buildaboxers?utm_source=qr",
+    "social_facebook_link": "https:\/\/www.facebook.com\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/",
     "social_youtube_link": "",
-    "social_tiktok_link": "https:\/\/vm.tiktok.com\/ZTLYdY9nw\/",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/en\/",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
-    "social_phone_number": "4175175197",
+    "social_phone_number": "16034667391",
     "social_email_link": "#",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
@@ -138,34 +137,12 @@
     "content_for_index": [
 
     ],
-    "blocks": {
-      "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
-        "settings": {
-          "button_color": "#000000",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
-          "button_icon": "chat_bubble",
-          "button_text": "chat_with_us",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": ""
-        }
-      }
-    },
     "color_schemes": {
       "background-1": {
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#000000",
+          "text": "#121212",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",

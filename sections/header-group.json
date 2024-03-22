@@ -33,16 +33,16 @@
         "logo_position": "middle-left",
         "menu": "header-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "none",
+        "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
-        "color_scheme": "accent-2",
+        "color_scheme": "scheme-7e5359f9-10d9-4950-ab8f-5c8ec3921f11",
         "menu_color_scheme": "background-1",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
-        "padding_top": 16,
-        "padding_bottom": 16
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },

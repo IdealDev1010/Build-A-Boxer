@@ -15,21 +15,15 @@
           "settings": {
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
-          }
-        },
-        "yoycol_print_on_demand_yoy_cust_jHKEFi": {
-          "type": "shopify:\/\/apps\/yoycol-print-on-demand\/blocks\/yoy_cust\/4bd0a00a-9e7e-4d5c-9852-a94e151633f7",
-          "settings": {
-            "product": "all-over-print-mens-long-boxer-briefs"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
           }
         },
         "quantity_selector": {
@@ -46,34 +40,25 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
           }
         },
         "share": {
           "type": "share",
-          "disabled": true,
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "judge_me_reviews_preview_badge_JaHa3t": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "variant_picker",
-        "yoycol_print_on_demand_yoy_cust_jHKEFi",
         "price",
+        "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "judge_me_reviews_preview_badge_JaHa3t"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -114,28 +99,11 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "1710983865b9b079a9": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_bH7LiR": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_bH7LiR"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "1709107582c176608d",
-    "1710983865b9b079a9"
+    "1709107582c176608d"
   ]
 }

@@ -3,7 +3,7 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Products",
+        "title": "Collections",
         "sort": "alphabetical",
         "image_ratio": "square",
         "columns_desktop": 3,

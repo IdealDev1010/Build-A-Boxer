@@ -5,7 +5,7 @@
   <h1 class="title title--primary inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ section.settings.title }}
   </h1>
-  {%- liquid
+  {% comment %} {%- liquid
     case section.settings.sort
       when 'products_high', 'products_low'
         assign collections = collections | sort: 'all_products_count'
@@ -45,7 +45,20 @@
       {%- endfor -%}
     </ul>
     {% render 'pagination', paginate: paginate %}
-  {%- endpaginate -%}
+  {%- endpaginate -%} {% endcomment %}
+
+  <div class="main-collection-list">
+      {%- for collection in collections -%}
+        {% if collection.handle == "Customizable Products" %}
+          {% else %}
+                <li class="collection-list__item grid__item">
+                  {% render 'collection-grid', collection: collection, media_aspect_ratio: section.settings.image_ratio, columns: 3 %}
+                </li>
+          {% endif %}
+        {%- endfor -%}   
+  </div>
+  <script src="{{ 'collection-grid.js' | asset_url }}" defer="defer"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
 </div>
 {% schema %}
 {

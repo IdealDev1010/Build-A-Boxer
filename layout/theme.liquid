@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-    <meta name="google-site-verification" content="3WUOuh0mGD5q4h7fXwZ_26pEcTRsgZgJC7wbmF4iRT4" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,7 +9,6 @@
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
-      <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png">
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
@@ -354,8 +352,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  
-<!-- PF EDT START -->
+  <!-- PF EDT START -->
 <script type='text/javascript'>
 {%- if content_for_header contains 'shopify-product-customizer' -%}
     {%- if product -%}
@@ -376,6 +373,7 @@
     {%- endif -%}
 {%- endif -%}
 </script>
+<script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
 <!-- PF EDT END -->
 </body>
 </html>

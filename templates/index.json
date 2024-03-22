@@ -37,7 +37,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/pexels-mike-jones-8874695_1.png",
-        "mobile_image": "shopify:\/\/shop_images\/mobile_img.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/2.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-left",
@@ -113,7 +113,7 @@
     "product_slide_YwTGTN": {
       "type": "product-slide",
       "settings": {
-        "collection": "boxers",
+        "collection": "boxer",
         "background_color": "#80d2e7"
       }
     },
