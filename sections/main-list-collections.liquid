@@ -62,9 +62,9 @@
       {%- for collection in collections -%}
         {% assign featured = collection.handle %}
         {% if collection.title != "Customizable Products" %}
-                <li class="collection-list__item grid__item">
+                <div class="collection-list__item">
                   {% render 'collection-grid', collection: collection, media_aspect_ratio: section.settings.image_ratio, columns: 3 %}
-                </li>
+                </div>
           {% endif %}
       {%- endfor -%}   
   </div>
