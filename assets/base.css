@@ -2010,15 +2010,19 @@ product-info .loading__spinner:not(.hidden) ~ *,
   /* background-color: rgb(var(--color-button)); */
   color: rgb(var(--color-button-text));
   height: 1.7rem;
-  width: 1.7rem;
+  width: 0px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 24px;
   bottom: 0.8rem;
-  left: 2.2rem;
+  left: -5px;
   line-height: calc(1 + 0.1 / var(--font-body-scale));
+}
+
+.cart-text {
+  width: 0px;
 }
 
 /* utility-bar */
