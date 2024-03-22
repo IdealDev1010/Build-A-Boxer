@@ -47,15 +47,26 @@
     {% render 'pagination', paginate: paginate %}
   {%- endpaginate -%} {% endcomment %}
 
+  {% for collection in list_collections %}
+    {% assign featured = collection.handle %}
+<!-- EDIT START -->
+{% if collection.title != 'NAMEOFCOLLECTION-1' and collection.title != 'NAMEOFCOLLECTION-2' %}
+    <div class="grid__item {{collection_item_width}} text-center">
+      {% include 'collection-grid-item' with collection_width: collection_width %}
+    </div>
+{% endif %}
+<!-- EDIT END -->
+  {% endfor %}
+
   <div class="main-collection-list">
       {%- for collection in collections -%}
-        {% if collection.handle == "Customizable Products" %}
-          {% else %}
+        {% assign featured = collection.handle %}
+        {% if collection.title != "Customizable Products" %}
                 <li class="collection-list__item grid__item">
                   {% render 'collection-grid', collection: collection, media_aspect_ratio: section.settings.image_ratio, columns: 3 %}
                 </li>
           {% endif %}
-        {%- endfor -%}   
+      {%- endfor -%}   
   </div>
   <script src="{{ 'collection-grid.js' | asset_url }}" defer="defer"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
