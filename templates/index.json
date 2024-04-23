@@ -145,6 +145,24 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "image_list_gb7Lfb": {
+      "type": "image-list",
+      "blocks": {
+        "image_content_kgHfET": {
+          "type": "image-content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "image_content_kgHfET"
+      ],
+      "settings": {
+        "background": "",
+        "heading": "Best review",
+        "description": "<p><strong>Now Here's A Never Ending Wall Of Screenshots Of The Wins Inside Our Community <\/strong><\/p>"
+      }
     }
   },
   "order": [
@@ -152,6 +170,7 @@
     "rich_text_wz8HxY",
     "featured_collection",
     "product_slide_YwTGTN",
-    "image_banner_mwyPW3"
+    "image_banner_mwyPW3",
+    "image_list_gb7Lfb"
   ]
 }
