@@ -1,0 +1,89 @@
+{{ 'image-list.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+
+#section-{{ section.id }} .image-list-wrapper {
+    background-color: {{ section.settings.background }};
+}
+  
+{%- endstyle -%}
+
+<div id="section-{{ section.id }}" class="image-list-container page-width">
+    <div class="image-list-wrapper">
+        <div class="text-content">
+            <h2 class="heading">{{ section.settings.heading }}</h2>
+            <div class="description">{{ section.settings.description }}</div>
+        </div>
+        <div class="image-container">
+            {%- for block in section.blocks -%}
+                <div class="image-wrapper">
+                    {% if block.settings.image != blank %}
+                    <img
+                        class="image-content"
+                        src="{{ block.settings.image | image_url }}"
+                        alt="{{ block.settings.image | escape }}"
+                        height="auto"
+                        width="auto"
+                        loading="lazy"
+                    >    
+                    {%- else -%}
+                    {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+     
+</div>
+
+{% schema %}
+  {
+    "name": "image list",
+    "tag": "section",
+    "class": "image-list",
+    "settings": [
+        {	
+            "type": "color",	
+            "id": "background",	
+            "label": "background"
+        },
+        {	
+            "type": "text",	
+            "id": "heading",	
+            "label": "Heading",
+            "default":"text"
+        },
+        {	
+            "type": "richtext",	
+            "id": "description",	
+            "label": "Description",
+            "default": "<p>text</p>"
+        }		
+
+    ],
+    "blocks": [
+      {
+        "name": "image content",
+        "type": "image-content",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            }
+        ]
+      }
+    ],
+    "presets": [
+        {
+          "name": "image content",
+          "blocks": [
+            {
+              "type": "image-content"
+            }
+          
+          ]
+        }
+      ]
+  }
+{% endschema %}
