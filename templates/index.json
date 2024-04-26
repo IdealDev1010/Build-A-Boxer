@@ -145,6 +145,46 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "image_list_94n43t": {
+      "type": "image-list",
+      "blocks": {
+        "image_content_W7cX4Q": {
+          "type": "image-content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3C743EF0-1AD1-46B3-8E02-63E47DBF1EE9_1_201_a.jpg"
+          }
+        },
+        "image_content_6kpe4z": {
+          "type": "image-content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/678A470F-2D2B-4D52-BE9F-62E2C5A6DDD8_1_201_a.jpg"
+          }
+        },
+        "image_content_9Mfxdp": {
+          "type": "image-content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/109B0369-ADF1-42E9-913B-9FB30A3667E6_1_201_a.jpg"
+          }
+        },
+        "image_content_FyNX3T": {
+          "type": "image-content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/142225CB-C8E8-4619-B139-C91AA141D44F_1_201_a.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_content_W7cX4Q",
+        "image_content_6kpe4z",
+        "image_content_9Mfxdp",
+        "image_content_FyNX3T"
+      ],
+      "settings": {
+        "background": "",
+        "heading": "Best Reviews",
+        "description": "<p>Now Here's A Never Ending Wall Of Screenshots Of The Wins Inside Our Community<\/p>"
+      }
     }
   },
   "order": [
@@ -152,6 +192,7 @@
     "rich_text_wz8HxY",
     "featured_collection",
     "product_slide_YwTGTN",
-    "image_banner_mwyPW3"
+    "image_banner_mwyPW3",
+    "image_list_94n43t"
   ]
 }
